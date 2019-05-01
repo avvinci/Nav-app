@@ -1,8 +1,8 @@
-const numItemsToGenerate = 2; //how many gallery items you want on the screen
+const numItemsToGenerate = 4; //how many gallery items you want on the screen
 const numImagesAvailable = 70; //how many total images are in the collection you are pulling from
 const imageWidth = 480; //your desired image width in pixels
 const imageHeight = 480; //desired image height in pixels
-const collectionID = 2565034; //the collection ID from the original url
+const collectionID = 858095; //the collection ID from the original url
 const galleryContainer = document.querySelector('.gallery-container');
 let keywords = ['paris','music','books'];
 
@@ -61,4 +61,4 @@ function updateGallery(){
 
 window.onload = getImage ; 
 
-setInterval(updateGallery, 5000);
+setInterval(updateGallery, 8000);
