@@ -1,8 +1,8 @@
-const numItemsToGenerate = 20; //how many gallery items you want on the screen
+const numItemsToGenerate = 10; //how many gallery items you want on the screen
 const numImagesAvailable = 242; //how many total images are in the collection you are pulling from
 const imageWidth = 480; //your desired image width in pixels
 const imageHeight = 480; //desired image height in pixels
-const collectionID = 1163637; //the collection ID from the original url
+const collectionID = 540518; //the collection ID from the original url
 const $galleryContainer = document.querySelector('.gallery-container');
 
 function renderGalleryItem(randomNumber){
@@ -10,6 +10,7 @@ function renderGalleryItem(randomNumber){
     .then((response)=> {    
       let galleryItem = document.createElement('div');
       galleryItem.classList.add('gallery-item');
+      console.log(response.url) ; 
       galleryItem.innerHTML = `
         <img class="gallery-image" src="${response.url}" alt="gallery image"/>
       `
