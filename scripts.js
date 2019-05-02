@@ -4,11 +4,22 @@ const numImagesAvailable = 70; //how many total images are in the collection you
 const imageWidth = 480; //your desired image width in pixels
 const imageHeight = 480; //desired image height in pixels
 const collectionID = 858095; //the collection ID from the original url
+let themeCollectionID = [159165,148987,1236,208403,148984] ; 
 let keywords = ['paris','music','books'];
 
 const galleryContainer = document.querySelector('.gallery-container');
+let button4 = document.getElementById('button4') ; 
 
+button4.onclick = function(){
+  collectionID = themeCollectionID[3] ; 
+  updateGallery(); 
+} ; 
 window.onload = getImageGallery ; 
+
+// function updateGalleryCollection(newid){
+ 
+// }
+
 
 function setImageItem(galleryItem, randomNumber){
   let url = `https://source.unsplash.com/collection/${collectionID}/${imageWidth}x${imageHeight}/?sig=${randomNumber}` ;   
@@ -48,7 +59,7 @@ function updateGalleryItem(i,randomNumber){
   setImageItem(galleryItem, randomNumber) ; 
 }
 
-function updateGallery(){
+function updateGallery( ){
   for(let i=0;i<numItemsToUpdate;i++){
     let randomImageIndex = Math.floor(Math.random() * numImagesAvailable); 
     updateGalleryItem(i,randomImageIndex);
