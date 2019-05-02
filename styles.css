@@ -44,9 +44,9 @@ img {
 .container{
   display: flex ;
   justify-content: space-between;
-  padding: 10px ; 
+  /* padding: 10px ;  */
   height: 70px;
-  background:  #e76c67;
+  background:  #262626;
 }
 
 
@@ -56,15 +56,16 @@ img {
   border-width: 0px;
   position: relative;
   text-align: center;
-  background: #e76c67;
+  background: #262626;
   font-family: 'Nunito', sans-serif;
   color: white;
   font-weight: 700;
+  font-size:  14;
   flex-grow: 1;
 }
 
 .collection:hover{
-  color: #e76c67;
+  color: #2581dc;
   background:white ;
   /* border: 1px solid #e76c67; */
 }
@@ -74,5 +75,5 @@ img {
   padding: 10px;
   text-align: center;
   font-size:  25   ;
-  color: #e76c67;
+  color: #262626;
 }

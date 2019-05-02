@@ -1,4 +1,5 @@
-const numItemsToGenerate = 2; //how many gallery items you want on the screen
+const numItemsToGenerate = 5; //how many gallery items you want on the screen
+const numItemsToUpdate = 2 ; //how many gallery items you want on the screen
 const numImagesAvailable = 70; //how many total images are in the collection you are pulling from
 const imageWidth = 480; //your desired image width in pixels
 const imageHeight = 480; //desired image height in pixels
@@ -48,7 +49,7 @@ function updateGalleryItem(i,randomNumber){
 }
 
 function updateGallery(){
-  for(let i=0;i<numItemsToGenerate;i++){
+  for(let i=0;i<numItemsToUpdate;i++){
     let randomImageIndex = Math.floor(Math.random() * numImagesAvailable); 
     updateGalleryItem(i,randomImageIndex);
   }
